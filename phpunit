@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-hhvm -d hhvm.hack.lang.look_for_typechecker=false -c .hhconfig phpunit.phar $@
+hhvm -d hhvm.hack.lang.look_for_typechecker=false -c hhvm.ini phpunit.phar $@
