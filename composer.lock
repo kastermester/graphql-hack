@@ -1,0 +1,140 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "cbfc71d504978d72a776f7973a0b1fd3",
+    "content-hash": "cb93bbd619e5ba6193244d33f3daba3d",
+    "packages": [
+        {
+            "name": "91carriage/phpunit-hhi",
+            "version": "5.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://git.simon.geek.nz/91-carriage/phpunit-hhi.git",
+                "reference": "539ac8b377a318d6cb964f7608e4ee189b93d229"
+            },
+            "require": {
+                "hhvm": ">=3.9.0"
+            },
+            "conflict": {
+                "phpunit/phpunit": "<5.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.2.x-dev",
+                    "dev-phpunit-5.1": "5.1.x-dev",
+                    "dev-phpunit-5.0": "5.0.x-dev",
+                    "dev-phpunit-4.8": "4.8.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "HHI definitions for PHPUnit",
+            "homepage": "https://git.simon.geek.nz/91-carriage/phpunit-hhi",
+            "keywords": [
+                "hack",
+                "hhvm",
+                "phpunit",
+                "testing"
+            ],
+            "time": "2015-12-21 08:29:11"
+        },
+        {
+            "name": "fredemmott/definition-finder",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fredemmott/definition-finder.git",
+                "reference": "04bec8273b6b1dc33312a9497d639d344bda6ae4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fredemmott/definition-finder/zipball/04bec8273b6b1dc33312a9497d639d344bda6ae4",
+                "reference": "04bec8273b6b1dc33312a9497d639d344bda6ae4",
+                "shasum": ""
+            },
+            "require": {
+                "hhvm": "~3.9"
+            },
+            "require-dev": {
+                "91carriage/phpunit-hhi": "~5.1.0",
+                "hhvm/systemlib-extractor": "^0.1.0",
+                "phpunit/phpunit": "~5.1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ],
+                "files": [
+                    "src/typedefs.php",
+                    "src/utils.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Find definitions in PHP or Hack files. Useful for autoloaders.",
+            "homepage": "https://github.com/fredemmott/definitions-finder",
+            "keywords": [
+                "autoload",
+                "definitions",
+                "hack",
+                "hhvm"
+            ],
+            "time": "2015-12-17 06:59:42"
+        },
+        {
+            "name": "fredemmott/hhvm-autoload",
+            "version": "v0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fredemmott/hhvm-autoload.git",
+                "reference": "a8e36959ef635fd4596feefc02b3bd890e2725b7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fredemmott/hhvm-autoload/zipball/a8e36959ef635fd4596feefc02b3bd890e2725b7",
+                "reference": "a8e36959ef635fd4596feefc02b3bd890e2725b7",
+                "shasum": ""
+            },
+            "require": {
+                "91carriage/phpunit-hhi": "^5.1",
+                "composer-plugin-api": "^1.0",
+                "fredemmott/definition-finder": "^1.0|dev-master",
+                "hhvm": "~3.11"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": [
+                    "FredEmmott\\AutoloadMap\\ComposerPlugin"
+                ]
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ],
+                "files": [
+                    "src/AutoloadMap.php",
+                    "src/Config.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "time": "2015-12-18 02:36:05"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
