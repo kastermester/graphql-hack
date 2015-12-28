@@ -38,6 +38,7 @@ type Token = shape(
 	'value' => ?string,
 );
 
+
 class Lexer {
 	private int $prevPosition = 0;
 	public function __construct(private Source $source){
@@ -120,7 +121,7 @@ class Lexer {
 			// FALLTHROUGH
 			case 'O': case 'P': case 'Q': case 'R': case 'S': case 'T': case 'U':
 			// FALLTHROUGH
-			case 'V': case 'X': case 'Y': case 'Z':
+			case 'V': case 'W': case 'X': case 'Y': case 'Z':
 
 			// FALLTHROUGH
 			case '_':
@@ -133,7 +134,7 @@ class Lexer {
 			// FALLTHROUGH
 			case 'o': case 'p': case 'q': case 'r': case 's': case 't': case 'u':
 			// FALLTHROUGH
-			case 'v': case 'x': case 'y':
+			case 'v': case 'w': case 'x': case 'y':
 			case 'z':
 				return self::readName($source, $position);
 
