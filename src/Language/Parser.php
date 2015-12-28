@@ -534,6 +534,8 @@ class Parser {
 				return $this->parseUnionTypeDefinition();
 			case 'scalar':
 				return $this->parseScalarTypeDefinition();
+			case 'enum':
+				return $this->parseEnumTypeDefinition();
 			case 'input':
 				return $this->parseInputObjectTypeDefinition();
 			case 'extend':
