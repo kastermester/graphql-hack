@@ -10,7 +10,7 @@ abstract final class Assert {
 		return $val;
 	}
 
-	public static function isInstanceOf<T>(mixed $val,	classname<T> $class) : T {
+	public static function isInstanceOf<T>(mixed $val, classname<T> $class) : T {
 		if (!($val instanceof $class)){
 			throw new AssertException("Expected value to be instance of $class");
 		}
