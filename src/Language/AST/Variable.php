@@ -4,7 +4,7 @@ namespace GraphQL\Language\AST;
 
 use GraphQL\Language\Location;
 
-class Variable extends Node {
+class Variable extends Value {
 	private Name $name;
 
 	public function __construct(

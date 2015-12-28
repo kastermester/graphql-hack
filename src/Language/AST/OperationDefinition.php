@@ -23,6 +23,7 @@ class OperationDefinition extends Definition {
 		?Location $loc,
 		Operation $operation,
 		SelectionSet $selectionSet,
+		?Name $name,
 		?ConstVector<VariableDefinition> $variableDefinitions,
 		?ConstVector<Directive> $directives
 	){
@@ -30,6 +31,7 @@ class OperationDefinition extends Definition {
 		$this->operation = $operation;
 		$this->selectionSet = $selectionSet;
 		$this->variableDefinitions = $variableDefinitions;
+		$this->name = $name;
 		$this->directives = $directives;
 	}
 

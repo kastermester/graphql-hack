@@ -2,5 +2,5 @@
 
 namespace GraphQL\Language\AST;
 
-abstract class TypeDefinition extends Node {
+abstract class TypeDefinition extends Definition {
 }
