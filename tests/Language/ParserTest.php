@@ -1,5 +1,7 @@
 <?hh // strict
 
+namespace GraphQL\Tests\Language;
+
 use GraphQL\Assert;
 use GraphQL\Language\AST;
 use GraphQL\Language\Location;
@@ -10,6 +12,7 @@ use GraphQL\SyntaxException;
 use HH\ImmVector;
 
 require_once(__DIR__ . "/../../src/Assert.php");
+use PHPUnit_Framework_TestCase;
 
 class ParserTest extends PHPUnit_Framework_TestCase {
 	private function parse(string $source) : AST\Document {

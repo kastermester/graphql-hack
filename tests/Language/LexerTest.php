@@ -1,10 +1,13 @@
 <?hh // strict
 
+namespace GraphQL\Tests\Language;
+
 use GraphQL\Language\Lexer;
 use GraphQL\Language\Source;
 use GraphQL\Language\TokenKind;
 use GraphQL\Language\Token;
 use GraphQL\SyntaxException;
+use PHPUnit_Framework_TestCase;
 
 class LexerTest extends PHPUnit_Framework_TestCase {
 	private function assertTokenEquals(Token $token, TokenKind $kind, int $start, int $end, ?string $value = null) : void {
