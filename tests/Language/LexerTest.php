@@ -120,16 +120,14 @@ TOKENS
 	  * @dataProvider stringErrorProvider
 	  */
 	 public function lexReportsUsefulStringErrors(string $source, string $expectedError) : void {
-		 try {
-			 $this->lexOne($source);
-		 } catch (SyntaxException $ex) {
-			 if(substr($ex->getMessage(), 0, strlen($expectedError)) !== $expectedError){
-				 $this->assertEquals($expectedError, substr($ex->getMessage(), 0, strlen($expectedError)), 'Expected error message to be a prefix');
-			 }
-			 return;
-		 }
+		try {
+ 			$this->lexOne($source);
+ 		} catch (SyntaxException $ex) {
+ 			$this->assertStringStartsWith($expectedError, $ex->getMessage(), 'Expected error message to be a prefix');
+ 			return;
+ 		}
 
-		 $this->assertFalse(true, "Expected exception to be thrown");
+ 		$this->assertFalse(true, "Expected exception to be thrown");
 	 }
 
 	 public function stringErrorProvider() : array<(string, string)> {
@@ -185,16 +183,14 @@ TOKENS
 	  * @dataProvider numberErrorProvider
 	  */
 	 public function lexReportsUsefulNumberErrors(string $source, string $expectedError) : void {
-		 try {
-			 $this->lexOne($source);
-		 } catch (SyntaxException $ex) {
-			 if(substr($ex->getMessage(), 0, strlen($expectedError)) !== $expectedError){
-				 $this->assertEquals($expectedError, substr($ex->getMessage(), 0, strlen($expectedError)), 'Expected error message to be a prefix');
-			 }
-			 return;
-		 }
+		try {
+ 			$this->lexOne($source);
+ 		} catch (SyntaxException $ex) {
+ 			$this->assertStringStartsWith($expectedError, $ex->getMessage(), 'Expected error message to be a prefix');
+ 			return;
+ 		}
 
-		 $this->assertFalse(true, "Expected exception to be thrown");
+ 		$this->assertFalse(true, "Expected exception to be thrown");
 	 }
 
 	 public function numberErrorProvider() : array<(string, string)> {
@@ -252,17 +248,15 @@ TOKENS
 	  * @test
 	  * @dataProvider unknownCharacterErrors
 	  */
-	 public function lexReportsUsefulUnknownCharacterError(string $body, string $expectedError) : void {
-		 try {
-			 $this->lexOne($body);
-		 } catch (SyntaxException $ex) {
-			 if(substr($ex->getMessage(), 0, strlen($expectedError)) !== $expectedError){
-				 $this->assertEquals($expectedError, substr($ex->getMessage(), 0, strlen($expectedError)), 'Expected error message to be a prefix');
-			 }
-			 return;
-		 }
+	 public function lexReportsUsefulUnknownCharacterError(string $source, string $expectedError) : void {
+		try {
+ 			$this->lexOne($source);
+ 		} catch (SyntaxException $ex) {
+ 			$this->assertStringStartsWith($expectedError, $ex->getMessage(), 'Expected error message to be a prefix');
+ 			return;
+ 		}
 
-		 $this->assertFalse(true, "Expected exception to be thrown");
+ 		$this->assertFalse(true, "Expected exception to be thrown");
 	 }
 
 	 public function unknownCharacterErrors() : array<(string, string)> {
