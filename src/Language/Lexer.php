@@ -381,6 +381,7 @@ class Lexer {
 			$char !== '"'
 		) {
 			if(
+				strlen($char) === 1 &&
 				// Invisible characters
 				($code = ord($char)) < 32 &&
 				$code != 9 // space is ok
@@ -393,7 +394,7 @@ class Lexer {
 			}
 
 			++$position;
-			if ($code == 92) { // \
+			if (strlen($char) === 1 && $code == 92) { // \
 				$value .= self::substr($body, $chunkStart, $position - 1 - $chunkStart);
 				$char = self::nillable_substr($body, $position, 1);
 				if(is_null($char) || strlen($char) > 1){
