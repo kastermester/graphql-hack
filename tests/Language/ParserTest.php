@@ -10,8 +10,6 @@ use GraphQL\Language\Source;
 use GraphQL\Language\SourceLocation;
 use GraphQL\SyntaxException;
 use HH\ImmVector;
-
-require_once(__DIR__ . "/../../src/Assert.php");
 use PHPUnit_Framework_TestCase;
 
 class ParserTest extends PHPUnit_Framework_TestCase {
