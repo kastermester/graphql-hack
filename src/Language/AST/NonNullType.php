@@ -22,4 +22,8 @@ class NonNullType extends TypeNode {
 	public function getType() : TypeNode {
 		return $this->type;
 	}
+
+	public function getKind() : string {
+		return 'NonNullType';
+	}
 }

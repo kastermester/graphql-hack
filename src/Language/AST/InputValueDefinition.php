@@ -36,4 +36,8 @@ class InputValueDefinition extends TypeDefinition {
 	public function getDefaultValue() : ?Value {
 		return $this->defaultValue;
 	}
+
+	public function getKind() : string {
+		return 'InputValueDefinition';
+	}
 }

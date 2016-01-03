@@ -19,4 +19,8 @@ class ObjectValue extends Value {
 	public function getFields() : ConstVector<ObjectField> {
 		return $this->fields;
 	}
+
+	public function getKind() : string {
+		return 'ObjectValue';
+	}
 }

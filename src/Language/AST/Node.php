@@ -23,4 +23,6 @@ abstract class Node {
 	protected function __construct(?Location $loc) {
 		$this->loc = $loc;
 	}
+
+	public abstract function getKind() : string;
 }

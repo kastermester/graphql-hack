@@ -19,4 +19,8 @@ class SelectionSet extends Node {
 	public function getSelections() : ConstVector<Selection> {
 		return $this->selections;
 	}
+
+	public function getKind() : string {
+		return 'SelectionSet';
+	}
 }

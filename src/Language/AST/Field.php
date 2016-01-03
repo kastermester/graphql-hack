@@ -64,4 +64,8 @@ class Field extends Selection {
 	public function getSelectionSet() : ?SelectionSet {
 		return $this->selectionSet;
 	}
+
+	public function getKind() : string {
+		return 'Field';
+	}
 }

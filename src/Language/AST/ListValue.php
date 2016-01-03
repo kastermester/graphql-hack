@@ -19,4 +19,8 @@ class ListValue extends Value {
 	public function getValues() : ConstVector<Value> {
 		return $this->values;
 	}
+
+	public function getKind() : string {
+		return 'ListValue';
+	}
 }

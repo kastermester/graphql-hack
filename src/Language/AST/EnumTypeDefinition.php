@@ -26,4 +26,8 @@ class EnumTypeDefinition extends TypeDefinition {
 	public function getValues() : ConstVector<EnumValueDefinition> {
 		return $this->values;
 	}
+
+	public function getKind() : string {
+		return 'EnumTypeDefinition';
+	}
 }

@@ -19,4 +19,8 @@ class ScalarTypeDefinition extends TypeDefinition {
 	public function getName() : Name {
 		return $this->name;
 	}
+
+	public function getKind() : string {
+		return 'ScalarTypeDefinition';
+	}
 }

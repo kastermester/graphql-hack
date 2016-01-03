@@ -26,4 +26,8 @@ class UnionTypeDefinition extends TypeDefinition {
 	public function getTypes() : ConstVector<NamedType> {
 		return $this->types;
 	}
+
+	public function getKind() : string {
+		return 'UnionTypeDefinition';
+	}
 }

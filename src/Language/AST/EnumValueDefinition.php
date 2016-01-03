@@ -18,4 +18,8 @@ class EnumValueDefinition extends Node {
 	public function getName() : Name {
 		return $this->name;
 	}
+
+	public function getKind() : string {
+		return 'EnumValueDefinition';
+	}
 }

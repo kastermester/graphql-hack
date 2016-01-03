@@ -18,4 +18,8 @@ class NamedType extends TypeNode {
 	public function getName() : Name {
 		return $this->name;
 	}
+
+	public function getKind() : string {
+		return 'NamedType';
+	}
 }

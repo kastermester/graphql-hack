@@ -17,4 +17,8 @@ class Document extends Node {
 	public function getDefinitions() : ConstVector<Definition> {
 		return $this->definitions;
 	}
+
+	public function getKind() : string {
+		return 'Document';
+	}
 }

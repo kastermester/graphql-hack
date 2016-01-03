@@ -18,4 +18,8 @@ class BooleanValue extends Value {
 	public function getValue() : bool {
 		return $this->value;
 	}
+
+	public function getKind() : string {
+		return 'BooleanValue';
+	}
 }

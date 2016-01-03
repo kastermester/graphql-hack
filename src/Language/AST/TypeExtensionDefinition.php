@@ -19,4 +19,8 @@ class TypeExtensionDefinition extends TypeDefinition {
 	public function getDefinition() : ObjectTypeDefinition {
 		return $this->definition;
 	}
+
+	public function getKind() : string {
+		return 'TypeExtensionDefinition';
+	}
 }

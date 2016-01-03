@@ -30,4 +30,8 @@ class FragmentSpread extends Selection {
 	public function getDirectives() : ?ConstVector<Directive> {
 		return $this->directives;
 	}
+
+	public function getKind() : string {
+		return 'FragmentSpread';
+	}
 }

@@ -30,4 +30,8 @@ class Directive extends Node {
 	public function getArguments() : ?ConstVector<Argument> {
 		return $this->arguments;
 	}
+
+	public function getKind() : string {
+		return 'Directive';
+	}
 }

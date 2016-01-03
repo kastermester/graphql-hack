@@ -25,4 +25,8 @@ class ObjectField extends Node {
 	public function getValue() : Value {
 		return $this->value;
 	}
+
+	public function getKind() : string {
+		return 'ObjectField';
+	}
 }

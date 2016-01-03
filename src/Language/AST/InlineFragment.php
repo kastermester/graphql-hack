@@ -41,4 +41,8 @@ class InlineFragment extends Selection {
 	public function getDirectives() : ?ConstVector<Directive> {
 		return $this->directives;
 	}
+
+	public function getKind() : string {
+		return 'InlineFragment';
+	}
 }

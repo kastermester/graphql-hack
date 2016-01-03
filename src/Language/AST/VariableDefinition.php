@@ -37,4 +37,8 @@ class VariableDefinition extends Definition {
 	public function getVariable() : Variable {
 		return $this->variable;
 	}
+
+	public function getKind() : string {
+		return 'VariableDefinition';
+	}
 }

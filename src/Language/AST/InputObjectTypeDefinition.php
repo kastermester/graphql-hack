@@ -26,4 +26,8 @@ class InputObjectTypeDefinition extends TypeDefinition {
 	public function getTypes() : ConstVector<InputValueDefinition> {
 		return $this->fields;
 	}
+
+	public function getKind() : string {
+		return 'InputObjectTypeDefinition';
+	}
 }

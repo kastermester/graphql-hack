@@ -37,4 +37,8 @@ class ObjectTypeDefinition extends TypeDefinition {
 	public function getInterfaces() : ?ConstVector<NamedType> {
 		return $this->interfaces;
 	}
+
+	public function getKind() : string {
+		return 'ObjectTypeDefinition';
+	}
 }

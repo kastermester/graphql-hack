@@ -26,4 +26,8 @@ class InterfaceTypeDefinition extends TypeDefinition {
 	public function getFields() : ConstVector<FieldDefinition> {
 		return $this->fields;
 	}
+
+	public function getKind() : string {
+		return 'InterfaceTypeDefinition';
+	}
 }

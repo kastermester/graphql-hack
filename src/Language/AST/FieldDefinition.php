@@ -33,4 +33,8 @@ class FieldDefinition extends TypeDefinition {
 	public function getType() : TypeNode {
 		return $this->type;
 	}
+
+	public function getKind() : string {
+		return 'FieldDefinition';
+	}
 }

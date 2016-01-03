@@ -18,4 +18,8 @@ class Variable extends Value {
 	public function getName() : Name {
 		return $this->name;
 	}
+
+	public function getKind() : string {
+		return 'Variable';
+	}
 }
