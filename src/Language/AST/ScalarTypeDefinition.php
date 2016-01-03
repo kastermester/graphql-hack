@@ -2,7 +2,6 @@
 
 namespace GraphQL\Language\AST;
 
-use ConstVector;
 use GraphQL\Language\Location;
 
 class ScalarTypeDefinition extends TypeDefinition {
