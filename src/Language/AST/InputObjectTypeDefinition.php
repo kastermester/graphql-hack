@@ -23,7 +23,7 @@ class InputObjectTypeDefinition extends TypeDefinition {
 		return $this->name;
 	}
 
-	public function getTypes() : ConstVector<InputValueDefinition> {
+	public function getFields() : ConstVector<InputValueDefinition> {
 		return $this->fields;
 	}
 

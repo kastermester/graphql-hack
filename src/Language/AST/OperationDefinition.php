@@ -63,6 +63,10 @@ class OperationDefinition extends Definition {
 		return $this->selectionSet;
 	}
 
+	public function getOperation() : Operation {
+		return $this->operation;
+	}
+
 	public function getKind() : string {
 		return 'OperationDefinition';
 	}
