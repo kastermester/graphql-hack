@@ -6,10 +6,10 @@ use ConstVector;
 use GraphQL\Language\Location;
 
 class FragmentDefinition extends Definition {
-	private ?NamedType $typeCondition;
-	private ?ConstVector<Directive> $directives;
 	private Name $name;
 	private SelectionSet $selectionSet;
+	private ?NamedType $typeCondition;
+	private ?ConstVector<Directive> $directives;
 
 	public function __construct(
 		?Location $loc,

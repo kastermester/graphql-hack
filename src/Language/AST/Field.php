@@ -6,8 +6,8 @@ use ConstVector;
 use GraphQL\Language\Location;
 
 class Field extends Selection {
-	private ?Name $alias;
 	private Name $name;
+	private ?Name $alias;
 	private ?ConstVector<Argument> $arguments;
 	private ?ConstVector<Directive> $directives;
 	private ?SelectionSet $selectionSet;

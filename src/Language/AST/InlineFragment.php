@@ -6,9 +6,9 @@ use ConstVector;
 use GraphQL\Language\Location;
 
 class InlineFragment extends Selection {
+	private SelectionSet $selectionSet;
 	private ?NamedType $typeCondition;
 	private ?ConstVector<Directive> $directives;
-	private SelectionSet $selectionSet;
 
 	public function __construct(
 		?Location $loc,
