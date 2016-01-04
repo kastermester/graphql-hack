@@ -2,7 +2,7 @@
 This project aims to be a port of [graphql/graphql-js](https://github.com/graphql/graphql-js) written in [Hack](http://hacklang.org/).
 
 ## Reasoning ##
-There already exists a PHP port at [webonyx/graphql-php](https://github.com/webonyx/graphql-php), this port will be different in that it tries to be idiomatic as a Hack port. That means it will use Hack collections whenever possible, but more importantly, like the original JavaScript implementation, it can support asynchronous execution, which will allow one to use a Hack port (not sure if it exists, yet, but it should be easy to create) of (facebook/dataloader)[https://github.com/facebook/dataloader] to implement efficient fetching, caching of data.
+There already exists a PHP port at [webonyx/graphql-php](https://github.com/webonyx/graphql-php), this port will be different in that it tries to be idiomatic as a Hack port. That means it will use Hack collections whenever possible, but more importantly, like the original JavaScript implementation, it can support asynchronous execution, which will allow one to use a Hack port (not sure if it exists, yet, but it should be easy to create) of [facebook/dataloader](https://github.com/facebook/dataloader) to implement efficient fetching, caching of data.
 
 I intend to create this port in such a way that it will be easy for me to continue keeping it up to date with the original JavaScript implementation. I will port all the original tests as well. The hope is that, once this port is finished and the JavaScript implementation keeps changing, I can watch the changes and apply them in this implementation as well.
 
