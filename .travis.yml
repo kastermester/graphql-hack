@@ -1,0 +1,10 @@
+---
+language: php
+php:
+  - hhvm
+before_install: composer --self-update
+install: composer install
+script: ./phpunit
+sudo: required
+dist: trusty
+group: edge
