@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 if [ "$DEBUG" = "1" ] ; then
-	hhvm -m debug -d hhvm.hack.lang.look_for_typechecker=false -c hhvm.ini phpunit.phar $@
+	hhvm -m debug -d hhvm.hack.lang.look_for_typechecker=false -c hhvm.ini ./vendor/bin/phpunit $@
 else
-	hhvm -d hhvm.hack.lang.look_for_typechecker=false -c hhvm.ini phpunit.phar $@
+	hhvm -d hhvm.hack.lang.look_for_typechecker=false -c hhvm.ini ./vendor/bin/phpunit $@
 fi
-

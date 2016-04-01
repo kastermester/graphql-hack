@@ -1,5 +1,9 @@
 {
 	"require": {
 		"fredemmott/hhvm-autoload": "0.1.0"
+	},
+	"require-dev": {
+		"91carriage/phpunit-hhi": "~5.3.0",
+		"phpunit/phpunit": "~5.3.0"
 	}
 }
